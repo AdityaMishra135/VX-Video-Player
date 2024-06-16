@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_7sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="?attr/selectableItemBackground"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:background="@drawable/folder_3"
+        android:id="@+id/folderIcon"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:contentDescription="@string/folder" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/_5sdp"
+        >
+
+        <TextView
+            android:id="@+id/folderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/folder_name"
+            android:textSize="@dimen/_14sdp"
+            android:maxLines="1"
+            android:fontFamily="@font/roboto_medium"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/folderPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:maxLines="1"
+            android:text="@string/folder_name"
+            android:textColor="@color/icon_color"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/totalVideos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:maxLines="1"
+            android:text="@string/folder_name"
+            android:textColor="@color/icon_color"
+            android:textSize="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+</LinearLayout>

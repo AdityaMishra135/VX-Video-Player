@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:clickable="true"
+    android:padding="5dp"
+    android:layout_marginTop="7dp"
+    android:background="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="75dp"
+        tools:ignore="UselessParent">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:shapeAppearanceOverlay="@style/Curved"
+            android:id="@+id/thumbImage"/>
+
+        <TextView
+            android:id="@+id/videoTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01:00"
+            android:paddingTop="1dp"
+            android:elevation="5dp"
+            android:textSize="12sp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:textColor="@color/white"
+            android:paddingBottom="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="7dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/time_bg"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dec"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textSize="13sp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="10dp"
+            android:textDirection="locale"
+            android:gravity="start"
+            android:id="@+id/videoTitle"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Folder Name"
+            android:maxLines="3"
+            android:textSize="10sp"
+            android:textColor="#7F7F7F"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:textDirection="locale"
+            android:gravity="start"
+            android:id="@+id/videoOfFolder"
+            tools:ignore="HardcodedText,SmallSp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="720p:00"
+            android:maxLines="3"
+            android:background="@drawable/resolution_bg"
+            android:textSize="10sp"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:textColor="#7F7F7F"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:textDirection="locale"
+            android:gravity="start"
+            android:id="@+id/resolutionOfVideo"
+            tools:ignore="HardcodedText,SmallSp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
